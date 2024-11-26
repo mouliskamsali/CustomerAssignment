@@ -1,0 +1,15 @@
+
+Get Customer
+curl --location 'https://localhost:44376/api/Customers'
+
+Save Customer
+curl --location 'https://localhost:44376/api/Customers' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "Name":"Eswar",
+    "Address_Street":"test",
+    "Address_City":"testaddress",
+    "Age":54,
+    "Email":"test@test",
+    "Phone":"9898989899"
+}'
